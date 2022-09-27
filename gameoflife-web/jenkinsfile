@@ -1,5 +1,9 @@
 node {
     stage ('test') {
         sh 'echo hello'
+        }
+    stage ('git learning') {
+        git 'https://github.com/sivakumar198/game-of-life-siva.git',
+        branch: 'master'
     }
-}
+    }
